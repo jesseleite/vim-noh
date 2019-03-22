@@ -25,3 +25,10 @@ noremap <Plug>NohAfter zz
 ## Thanks!
 
 Thank you to the legendary [Junegunn Choi](https://github.com/junegunn), who wrote the original [vim-slash](https://github.com/junegunn/vim-slash) plugin that this fork is based on.
+
+## Who am I?
+
+Just a hack 🔨
+
+- [jesseleite.com](https://jesseleite.com)
+- [@jesseleite85](https://twitter.com/jesseleite85)
