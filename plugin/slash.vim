@@ -7,11 +7,6 @@ function! s:wrap(seq)
   return a:seq."\<plug>(slash-trailer)"
 endfunction
 
-function! s:immobile(seq)
-  let s:winline = winline()
-  return a:seq."\<plug>(slash-prev)"
-endfunction
-
 function! s:trailer()
   augroup slash
     autocmd!
@@ -19,15 +14,6 @@ function! s:trailer()
   augroup END
 
   let seq = foldclosed('.') != -1 ? 'zv' : ''
-  if exists('s:winline')
-    let sdiff = winline() - s:winline
-    unlet s:winline
-    if sdiff > 0
-      let seq .= sdiff."\<c-e>"
-    elseif sdiff < 0
-      let seq .= -sdiff."\<c-y>"
-    endif
-  endif
   let after = len(maparg("<plug>(slash-after)", mode())) ? "\<plug>(slash-after)" : ''
   return seq . after
 endfunction
@@ -55,9 +41,9 @@ map  <expr> n    <sid>wrap('n')
 map  <expr> N    <sid>wrap('N')
 map  <expr> gd   <sid>wrap('gd')
 map  <expr> gD   <sid>wrap('gD')
-map  <expr> *    <sid>wrap(<sid>immobile('*'))
-map  <expr> #    <sid>wrap(<sid>immobile('#'))
-map  <expr> g*   <sid>wrap(<sid>immobile('g*'))
-map  <expr> g#   <sid>wrap(<sid>immobile('g#'))
-xmap <expr> *    <sid>wrap(<sid>immobile("y/\<c-r>=<sid>escape(0)\<plug>(slash-cr)\<plug>(slash-cr)"))
-xmap <expr> #    <sid>wrap(<sid>immobile("y?\<c-r>=<sid>escape(1)\<plug>(slash-cr)\<plug>(slash-cr)"))
+map  <expr> *    <sid>wrap('*')
+map  <expr> #    <sid>wrap('#')
+map  <expr> g*   <sid>wrap('g*')
+map  <expr> g#   <sid>wrap('g#')
+xmap <expr> *    <sid>wrap("y/\<c-r>=<sid>escape(0)\<plug>(slash-cr)\<plug>(slash-cr)")
+xmap <expr> #    <sid>wrap("y?\<c-r>=<sid>escape(1)\<plug>(slash-cr)\<plug>(slash-cr)")
