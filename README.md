@@ -41,14 +41,3 @@ Places the current match at the center of the window.
 ```vim
 noremap <plug>(slash-after) zz
 ```
-
-#### Blinking cursor after search using Vim 8 timer
-
-```vim
-if has('timers')
-  " Blink 2 times with 50ms interval
-  noremap <expr> <plug>(slash-after) slash#blink(2, 50)
-endif
-```
-
-You can prepend `zz` to the expression: `'zz'.slash#blink(2, 50)`
