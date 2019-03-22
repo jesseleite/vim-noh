@@ -1,43 +1,27 @@
-vim-slash
-=========
+# Vim Noh 🔎
 
-vim-slash provides a set of mappings for enhancing in-buffer search experience
-in Vim.
+A vim plugin for automatically clearing search highlighting when cursor is moved.
 
-- Automatically clears search highlight when cursor is moved
-- Improved star-search (visual-mode, highlighting without moving)
-
-Installation
-------------
+## Installation
 
 Using [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```vim
-Plug 'junegunn/vim-slash'
+Plug 'jesseleite/vim-noh'
 ```
 
-Comparison with vim-oblique
----------------------------
+## Comparison with vim-slash
 
-vim-slash is a smaller alternative to [vim-oblique][ob]. vim-oblique depends
-on [a reimplementation of Vim command-line interface][pcl] which is incomplete
-and has a number of issues that cannot be easily fixed. vim-oblique is also
-much slower than the native /-search when working with large files.
+vim-noh is a smaller alternative to [vim-slash](https://github.com/junegunn/vim-slash), which is a smaller alternative to [vim-oblique](https://github.com/junegunn/vim-oblique).  Many features are missing in vim-noh, but that's the point, [my dear](https://www.youtube.com/watch?v=GQ5ICXMC4xY).
 
-Many features of vim-oblique are missing in vim-slash, but [frankly, my dear,
-I don't give a damn][damn].
+## Customization
 
-[ob]:   https://github.com/junegunn/vim-oblique
-[pcl]:  https://github.com/junegunn/vim-pseudocl
-[damn]: https://en.wikipedia.org/wiki/Frankly,_my_dear,_I_don%27t_give_a_damn
-
-Customization
--------------
-
-#### `zz` after search
-
-Places the current match at the center of the window.
+Place the current match at the center of the window:
 
 ```vim
 noremap <plug>(slash-after) zz
 ```
+
+## Thanks!
+
+Thank you to [Junegunn Choi](https://github.com/junegunn), who wrote the original [vim-slash](https://github.com/junegunn/vim-slash) plugin that this fork is based on.
