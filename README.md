@@ -19,7 +19,7 @@ Vim-noh is a smaller alternative to [vim-slash](https://github.com/junegunn/vim-
 Place the current match at the center of the window:
 
 ```vim
-noremap <plug>(slash-after) zz
+noremap <Plug>NohAfter zz
 ```
 
 ## Thanks!
