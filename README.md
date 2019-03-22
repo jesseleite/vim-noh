@@ -1,4 +1,4 @@
-# Vim Noh 🔎
+# Vim Noh 🕵🏻‍♂️
 
 A vim plugin for automatically clearing search highlighting when cursor is moved.
 
