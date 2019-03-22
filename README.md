@@ -12,7 +12,7 @@ Plug 'jesseleite/vim-noh'
 
 ## Comparison with vim-slash
 
-Vim-noh is a smaller alternative to [vim-slash](https://github.com/junegunn/vim-slash), which is a smaller alternative to [vim-oblique](https://github.com/junegunn/vim-oblique).  Many features are missing in vim-noh, but that's the point, [my dear](https://www.youtube.com/watch?v=GQ5ICXMC4xY).
+Vim-noh is a lighter fork of [vim-slash](https://github.com/junegunn/vim-slash), which is a smaller alternative to [vim-oblique](https://github.com/junegunn/vim-oblique).  Many features are missing in vim-noh, but that's the point, [my dear](https://www.youtube.com/watch?v=GQ5ICXMC4xY).
 
 ## Customization
 
