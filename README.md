@@ -24,4 +24,4 @@ noremap <plug>(slash-after) zz
 
 ## Thanks!
 
-Thank you to [Junegunn Choi](https://github.com/junegunn), who wrote the original [vim-slash](https://github.com/junegunn/vim-slash) plugin that this fork is based on.
+Thank you to the legendary [Junegunn Choi](https://github.com/junegunn), who wrote the original [vim-slash](https://github.com/junegunn/vim-slash) plugin that this fork is based on.
